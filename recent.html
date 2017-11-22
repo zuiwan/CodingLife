@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recent</title>
+    <!-- Bootstrap核心CSS文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- 主页（即recent页面）链接 -->
+            <div class="navbar-header">
+                <a href="#recent" class="navbar-brand"><span class="glyphicon glyphicon-home"></span>CodingLife</a>
+            </div>
+            <!-- 二级页面链接 -->
+            <div>
+                <!-- 向左对齐或居中 -->
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#Recent">Recent</a></li>
+                    <li><a href="#Project">Project</a></li>
+                    <li><a href="#Blog">Blog</a></li>
+                    <li><a href="#Favorite">Favorite</a></li>
+                </ul>
+                <!-- 向右对齐 -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-user"></span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#account">Account</a></li>
+                            <li><a href="#Memo">Memo</a></li>
+                            <li><a href="#timeline">Timeline</a></li>
+                            <li><a href="#logout">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 使用栅格系统 -->
+    <div class="container">
+        <div class="row">
+            <!-- 左侧项目版本和任务记录 -->
+            <div class="col-sm-2">
+                <!-- 版本选择面板 -->
+                <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Version Selection</div>
+                            <div class="panel-body">
+                                选择项目版本
+                            </div>
+                        </div>
+                </div>
+                <!-- 任务记录面板 -->
+                <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">任务记录</div>
+                            <div class="panel-body">
+                                任务记录
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <!-- 中间面板 -->
+            <div class="col-sm-10">
+                <!-- Recent Project面板 -->
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Recent project</div>
+                            <div class="panel-body">
+                                Project List
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Recent blog面板 -->
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Recent blog</div>
+                            <div class="panel-body">
+                                Blog List
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Recent collection面板 -->
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Recent collection</div>
+                            <div class="panel-body">
+                                Collection List
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery文件。务必在bootstrap.min.js之前引入 -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Bootstrap核心JavaScript文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
