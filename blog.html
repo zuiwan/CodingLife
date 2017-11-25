@@ -1,18 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog</title>
     <!-- Bootstrap核心CSS文件 -->
-    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
+
 <body>
-    
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid row">
+            <!-- 主页（即recent页面）链接 -->
+            <div class="navbar-header">
+                <a href="./recent.html" class="navbar-brand">
+                    <span class="glyphicon glyphicon-home"></span>CodingLife</a>
+            </div>
+            <!-- 二级页面链接 -->
+            <div class="col-sm-6 col-sm-offset-4">
+                <!-- 向左对齐或居中 -->
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="./recent.html">Recent</a>
+                    </li>
+                    <li>
+                        <a href="./project.html">Project</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="./favorite.html">Favorite</a>
+                    </li>
+                </ul>
+                <!-- 向右对齐 -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-user"></span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#account">Account</a>
+                            </li>
+                            <li>
+                                <a href="#Memo">Memo</a>
+                            </li>
+                            <li>
+                                <a href="#timeline">Timeline</a>
+                            </li>
+                            <li>
+                                <a href="#logout">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 使用栅格系统 -->
+    <div class="container">
+        <div class="row">
+            <!-- 左侧项目版本和任务记录 -->
+            <div class="col-sm-2">
+                <!-- 版本选择面板 -->
+                <div class="row">
+                    <div class="panel-group" id="version-selection">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Version Selection
+                                    <a data-toggle="collapse" data-parent="#version-selection" href="#collapseOne">
+                                        <span class="glyphicon glyphicon-chevron-down"></span>
+                                    </a>
+                                </h4>
+
+                            </div>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>
+                                        <a href="#">ver1.0.1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ver1.0.2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ver1.0.3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ver1.0.4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 任务记录面板 -->
+                <div class="row">
+                    <div class="panel-group" id="task-id">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">任务记录
+                                    <a data-toggle="collapse" data-parent="#task-id" href="#collapseTwo">
+                                        <span class="glyphicon glyphicon-chevron-down"></span>
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>
+                                        <a href="#">任务1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">任务2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">任务3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">任务4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 中间面板 -->
+            <div class="col-sm-10">
+                <!-- 具体项目面板 -->
+                <div class="row">
+                    <div class="col-sm-11 col-sm-offset-1">
+                        <!-- 标签页导航 -->
+                        <ul id="tab-blog" class="nav nav-pills">
+                            <li class="active">
+                                <a href="#up-time" data-toggle="tab">时间升序</a>
+                            </li>
+                            <li>
+                                <a href="#down-time" data-toggle="tab">时间降序</a>
+                            </li>
+                        </ul>
+                        <!-- 标签页内容 -->
+                        <div id="blog-content" class="tab-content">
+                            <div class="tab-pane panel panel-primary fade in active" id="up-time">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="" class="list-group-item-heading">
+                                            <h4>打造自己的JavaScript武器库<span class="label label-primary">前端进阶</span></h4>
+                                        </a>
+                                        <p class="list-group-item-text row">
+                                            <span class="col-sm-4">所属项目：项目一1.0.1</span>
+                                            <span class="col-sm-4">所属任务：任务一</span>
+                                            <span class="col-sm-4">时间：2017.2.1</span>
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="" class="list-group-item-heading">
+                                            <h4>打造自己的JavaScript武器库<span class="label label-primary">前端进阶</span></h4>
+                                        </a>
+                                        <p class="list-group-item-text row">
+                                            <span class="col-sm-4">所属项目：项目一1.0.1</span>
+                                            <span class="col-sm-4">所属任务：任务一</span>
+                                            <span class="col-sm-4">时间：2017.2.2</span>
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="" class="list-group-item-heading">
+                                            <h4>打造自己的JavaScript武器库<span class="label label-primary">前端进阶</span></h4>
+                                        </a>
+                                        <p class="list-group-item-text row">
+                                            <span class="col-sm-4">所属项目：项目一1.0.1</span>
+                                            <span class="col-sm-4">所属任务：任务一</span>
+                                            <span class="col-sm-4">时间：2017.2.3</span>
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="" class="list-group-item-heading">
+                                            <h4>打造自己的JavaScript武器库<span class="label label-primary">前端进阶</span></h4>
+                                        </a>
+                                        <p class="list-group-item-text row">
+                                            <span class="col-sm-4">所属项目：项目一1.0.1</span>
+                                            <span class="col-sm-4">所属任务：任务一</span>
+                                            <span class="col-sm-4">时间：2017.2.4</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane panel panel-primary fade" id="down-time">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="" class="list-group-item-heading">
+                                            <h4>打造自己的JavaScript武器库<span class="label label-primary">前端进阶</span></h4>
+                                        </a>
+                                        <p class="list-group-item-text row">
+                                            <span class="col-sm-4">所属项目：项目一1.0.1</span>
+                                            <span class="col-sm-4">所属任务：任务一</span>
+                                            <span class="col-sm-4">时间：2017.2.4</span>
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="" class="list-group-item-heading">
+                                            <h4>打造自己的JavaScript武器库<span class="label label-primary">前端进阶</span></h4>
+                                        </a>
+                                        <p class="list-group-item-text row">
+                                            <span class="col-sm-4">所属项目：项目一1.0.1</span>
+                                            <span class="col-sm-4">所属任务：任务一</span>
+                                            <span class="col-sm-4">时间：2017.2.3</span>
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="" class="list-group-item-heading">
+                                            <h4>打造自己的JavaScript武器库<span class="label label-primary">前端进阶</span></h4>
+                                        </a>
+                                        <p class="list-group-item-text row">
+                                            <span class="col-sm-4">所属项目：项目一1.0.1</span>
+                                            <span class="col-sm-4">所属任务：任务一</span>
+                                            <span class="col-sm-4">时间：2017.2.2</span>
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="" class="list-group-item-heading">
+                                            <h4>打造自己的JavaScript武器库<span class="label label-primary">前端进阶</span></h4>
+                                        </a>
+                                        <p class="list-group-item-text row">
+                                            <span class="col-sm-4">所属项目：项目一1.0.1</span>
+                                            <span class="col-sm-4">所属任务：任务一</span>
+                                            <span class="col-sm-4">时间：2017.2.1</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- jQuery文件。务必在bootstrap.min.js之前引入 -->
-    <script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
     <!-- Bootstrap核心JavaScript文件 -->
-    <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
+	<script type="text/javascript">
+		function displayRegisterForm(){
+			var loginForm=document.getElementById('loginContainer');
+			var registerForm=document.getElementById('registerContainer');
+			registerForm.style.display='block';
+			loginForm.style.display='none';
+		}
+		function displayLoginForm(){
+			var loginForm=document.getElementById('loginContainer');
+			var registerForm=document.getElementById('registerContainer');
+			registerForm.style.display='none';
+			loginForm.style.display='block';
+		}
+	</script>
+</head>
+<body>
+	<div class="container" id="loginContainer">
+		<h1 class="title">CodingLife<span>/Login</span></h1>
+		<div class="loginForm">
+			<form action="#" method="POST">
+				<label for="userName">UserName: </label>
+				<br>
+				<input type="text" name="userName" id="userName" placeholder="UserName/Email">
+				<br><br>
+				<label for="password">Password:&nbsp;&nbsp;</label>
+				<br>
+				<input type="password" name="password" id="password" placeholder="Password">
+				<br><br>
+				<input type="checkbox" name="" id="rememberMe">remember me
+				<br><br>
+				<input type="submit" name="" value="login">
+			</form>
+		</div>
+		<hr>
+		<p class="bottomInfo">Not registered?&nbsp;&nbsp;<a href="javascript:void(0);" id="registerLink" onclick="displayRegisterForm()">Signup here!</a></p>
+	</div>
+	<div class="container" id="registerContainer">
+		<h1 class="title">CodingLife<span>/Register</span></h1>
+		<div class="loginForm">
+			<form action="#" method="POST">
+				<label for="email">Email: </label>
+				<br>
+				<input type="text" name="email" id="email" placeholder="Email">
+				<br><br>
+				<label for="userName">UserName: </label>
+				<br>
+				<input type="text" name="userName" id="userName" placeholder="UserName">
+				<br><br>
+				<label for="password">Password:&nbsp;&nbsp;</label>
+				<br>
+				<input type="password" name="password" id="password" placeholder="Password">
+				<br><br>
+				<label for="passwordAgain">Password Again:&nbsp;&nbsp;</label>
+				<br>
+				<input type="password" name="passwordAgain" id="passwordAgain" placeholder="Password">
+				<br><br>
+				<input type="submit" name="" value="register">
+			</form>
+		</div>
+		<hr>
+		<p class="bottomInfo">Already have an account?&nbsp;&nbsp;<a href="javascript:void(0);" id="loginLink" onclick="displayLoginForm()">Login here!</a></p>
+	</div>
+</body>
+</html>
