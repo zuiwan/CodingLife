@@ -33,12 +33,18 @@ function add(){
 		$(this).parents('.pull-right').prev().append('<li>\
 							<table>\
 								<tr>\
-									<td><div class="favoriteItem" contenteditable="true">新加的</div></td>\
+									<td><div class="favoriteItem" contenteditable="true">新添加</div></td>\
 									<td><a href="javascript:void(0);"><span class="glyphicon glyphicon-trash"></span></a></td>\
 									<td><a href="javascript:void(0);"><span class="glyphicon glyphicon-edit"></span></a></td>\
 								</tr>\
 							</table>\
 						</li>');
+		favoriteItem=$(this).parents('.listContainer').find('li').last().find('.favoriteItem');
+		favoriteItem.attr('contenteditable','true').focus();
+		favoriteItem.blur(function(){
+			$(this).attr('contenteditable','false');
+		});
+
 		edit();
 		deleteItem();
 	});
