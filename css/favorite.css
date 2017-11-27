@@ -53,3 +53,71 @@ li{
 .websiteFav{
 	margin-top: 4em;
 }
+
+
+
+/*
+info.html
+
+ */
+
+.taskDetail,.displayDetail{
+	border: 1px solid grey;
+	border-radius: 10px;
+	
+}
+
+.taskDetail>p,.displayDetail>p{
+	border: 0px solid grey;
+	border-radius: 10px 10px 0 0;
+	background: lightgrey;
+	padding: 1em;
+
+}
+
+
+
+.taskDetail a p{
+	padding:0 1em;
+}
+
+.taskDetail a{
+	color: black;
+}
+
+.basicInfo table,.detailTitle table{
+	width: 100%;
+}
+
+.basicInfo table tr td{
+	height: 2em;
+}
+
+.detailTitle>p{
+	color: orange;
+	border-left: 2px solid orange; 
+	padding-left: 5px;
+}
+
+.detailTitle{
+	border-top: 1px solid grey;
+	padding-top: 1em;
+}
+
+.basicInfo table,.detailTitle{
+	margin: 1em;
+}
+
+.greyBg{
+	background: lightgrey;
+	padding: 1em;
+}
+
+#runningInfoDetail{
+	display: none;
+}
+
+.detailImg{
+	width: 1.5em;
+	margin-right: 0.5em;
+}

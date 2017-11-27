@@ -49,3 +49,22 @@ function add(){
 		deleteItem();
 	});
 }
+
+//for info.html
+
+$(document).ready(function(){
+
+
+	$('#runningInfo').click(function(){
+		$('#runningInfoDetail').css('display','block');
+		$('#basicInfoDetail').css('display','none');
+		$(this).css('color','orange');
+		$('#basicInfo').css('color','black');
+	});
+	$('#basicInfo').click(function(){
+		$('#runningInfoDetail').css('display','none');
+		$('#basicInfoDetail').css('display','block');
+		$(this).css('color','orange');
+		$('#runningInfo').css('color','black');
+	});
+})
